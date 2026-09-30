@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       `Dokument: ${file?file.name:"nije priložen"}\n\n`+
       `Napomena: mailto forma ne može automatski priložiti datoteku.`
     );
-    window.location.href=`mailto:info@agencijaprevod.ba?subject=${subject}&body=${body}`;
+    window.location.href=`mailto:the32system@gmail.com?subject=${subject}&body=${body}`;
     msg.textContent="Otvaram vaš e-mail program sa pripremljenim upitom.";
     msg.className="form-message ok";
   });
