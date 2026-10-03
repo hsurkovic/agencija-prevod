@@ -153,14 +153,15 @@
             <div><small>ADRESA</small><strong>Telali 12, 71000 Sarajevo, BiH</strong></div>
           </div>
         </div>
-        <form class="quote-form" id="quoteForm">
+        <form class="quote-form" id="quoteForm" action="https://formspree.io/f/xvkglwyz" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+          <input type="hidden" name="_subject" value="Novi zahtjev za procjenu prevoda – Agencija PREVOD">
           <h3>Besplatna procjena</h3>
           <label>Ime i prezime<input name="name" required autocomplete="name" placeholder="Vaše ime i prezime"></label>
           <label>E-mail<input type="email" name="email" required autocomplete="email" placeholder="vas@email.com"></label>
           <label>Telefon<input name="phone" autocomplete="tel" placeholder="+387 ..."></label>
           <label>Ciljni jezik<select name="language" required><option value="">Odaberite jezik</option><option>Engleski</option><option>Njemački</option><option>Francuski</option><option>Drugi jezik</option></select></label>
           <label>Detalji dokumenta<textarea name="message" rows="4" required placeholder="Vrsta dokumenta, broj strana, rok..."></textarea></label>
-          <label>Dokument <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"><small>Opcionalno · do 10 MB</small></label>
+          <label>Dokument <input type="file" id="fileInput" name="attachment" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"><small>Opcionalno · do 10 MB</small></label>
           <button class="btn btn-gold" type="submit">Pošalji upit <span>→</span></button>
           <div id="formMessage" class="form-message"></div>
         </form>
